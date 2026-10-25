@@ -6,6 +6,19 @@ An end-to-end data analytics portfolio project exploring e-commerce delivery per
 
 
 
+## Project Highlights
+
+| Metric | Result |
+|---|---:|
+| Orders analyzed | 99,441 |
+| Eligible deliveries | 96,470 |
+| Late deliveries | 6,534 |
+| Overall late-delivery rate | 6.77% |
+| Average review — on-time deliveries | 4.29 / 5 |
+| Average review — late deliveries | 2.27 / 5 |
+
+**Key insight:** Late deliveries were associated with substantially lower customer ratings in the analyzed data. This is an observational finding, not proof of causation.
+
 \## Project Overview
 
 
