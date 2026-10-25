@@ -1,0 +1,27 @@
+
+# Keep datasets out of the public repository
+data/raw/
+data/processed/*.csv
+
+# Protect passwords and secrets
+.env
+.env.*
+!.env.example
+*credentials*
+*password*
+*secret*
+*.pem
+*.key
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Exclude customer-level identifier analysis
+reports/tables/repeat_customer_analysis.csv

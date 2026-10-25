@@ -1,0 +1,38 @@
+-- Create EACH measure separately with Modeling > New measure.
+-- Tables must retain these exact names. See docs/COMPLETE_GUIDE.md.
+Total Orders = COUNTROWS(fact_orders)
+
+Delivered Orders = SUM(fact_orders[is_delivered])
+
+Eligible Orders = SUM(fact_orders[eligible_delivery])
+
+Late Orders = SUM(fact_orders[is_late])
+
+Late Rate = DIVIDE([Late Orders], [Eligible Orders])
+
+On-Time Rate = DIVIDE([Eligible Orders] - [Late Orders], [Eligible Orders])
+
+Delivered Item Value = CALCULATE(SUM(fact_orders[item_value]), fact_orders[is_delivered] = 1)
+
+Delivered Orders With Item Value = CALCULATE(COUNT(fact_orders[item_value]), fact_orders[is_delivered] = 1)
+
+Delivered AOV = DIVIDE([Delivered Item Value], [Delivered Orders With Item Value])
+
+Avg Delivery Days = AVERAGE(fact_orders[delivery_days])
+
+Reviewed Orders = COUNT(fact_orders[review_score])
+
+Review Coverage = DIVIDE([Reviewed Orders], [Total Orders])
+
+Avg Review Score = AVERAGE(fact_orders[review_score])
+
+Low Review Rate = DIVIDE(SUM(fact_orders[is_low_review]), [Reviewed Orders])
+
+-- ONLY for category/seller visuals sourced from fact_order_items.
+Item Eligible Orders = CALCULATE(DISTINCTCOUNT(fact_order_items[order_id]), fact_order_items[eligible_delivery] = 1)
+
+Item Late Orders = CALCULATE(DISTINCTCOUNT(fact_order_items[order_id]), fact_order_items[is_late] = 1)
+
+Item Late Rate = DIVIDE([Item Late Orders], [Item Eligible Orders])
+
+Item Delivered Value = CALCULATE(SUM(fact_order_items[price]), fact_order_items[is_delivered] = 1)

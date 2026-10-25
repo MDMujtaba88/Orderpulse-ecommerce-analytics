@@ -1,0 +1,5 @@
+Policy,Delivery group,Reviewed orders,Mean score,Low review %
+Current policy,On time,89443,4.29,9.27
+Current policy,Late,6381,2.27,62.42
+Earliest review,On time,89443,4.291,9.26
+Earliest review,Late,6381,2.273,62.37
