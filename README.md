@@ -24,13 +24,12 @@ An end-to-end data analytics portfolio project exploring e-commerce delivery per
 ### 1. Monthly Late-Delivery Rate
 Shows how late-delivery performance changes over time.
 ![Monthly late-delivery rate](reports/figures/monthly_late_rate.png)
-![Monthly late-delivery rate](reports/figures/monthly_late_rate.png)
+
 
 ### 2. Delivery Performance and Customer Reviews
 Explores the relationship between delivery performance and customer ratings.
 
 ![Reviews versus delivery performance](reports/figures/reviews_vs_delivery.png)
-
 ### 3. Delivery Performance by State
 Helps identify geographic areas that may need further investigation.
 
