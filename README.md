@@ -19,6 +19,28 @@ An end-to-end data analytics portfolio project exploring e-commerce delivery per
 
 **Key insight:** Late deliveries were associated with substantially lower customer ratings in the analyzed data. This is an observational finding, not proof of causation.
 
+## Visual Insights
+
+### 1. Monthly Late-Delivery Rate
+Shows how late-delivery performance changes over time.
+
+![Monthly late-delivery rate](reports/figures/monthly_late_rate.png)
+
+### 2. Delivery Performance and Customer Reviews
+Explores the relationship between delivery performance and customer ratings.
+
+![Reviews versus delivery performance](reports/figures/reviews_vs_delivery.png)
+
+### 3. Delivery Performance by State
+Helps identify geographic areas that may need further investigation.
+
+![State delivery performance](reports/figures/state_delivery_performance.png)
+
+### 4. What-If Scenario Analysis
+Presents a scenario-based view to support operational decision-making.
+
+![What-if scenario analysis](reports/figures/what_if_scenario.png)
+
 \## Project Overview
 
 
